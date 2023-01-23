@@ -1,0 +1,19 @@
+.cursor {
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  font-size: 16px;
+  h6 {
+    cursor: pointer;
+  }
+  ul {
+    padding-left: 0rem;
+    li {
+      list-style: none;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+}

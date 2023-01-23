@@ -1,0 +1,108 @@
+body {
+  background-color: #8f8c8c4d;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h2.display-6 {
+  background-color: #000000a3;
+  padding: 20px;
+  transform: translate(118px, 0) rotate(-10deg);
+}
+
+.coverImg {
+  background-image: url(https://cdn.pixabay.com/photo/2021/08/23/14/50/online-shopping-6567977_960_720.png);
+  background-color: #c9497b;
+  height: 500px;
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+// animation for home page tag line
+.lineUp {
+  animation: 1.5s anim-lineUp ease-in;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(140px, 0) rotate(-10deg);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(140px, 0%) rotate(-10deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(140px, 0%) rotate(-10deg);
+  }
+}
+// animation for home page tag line
+
+.cursor {
+  cursor: pointer;
+}
+
+.overlay-dark {
+  background-color: rgba(0, 0, 0, 0.481);
+}
+
+.text-shadow {
+  text-shadow: 2px 2px #000000;
+}
+
+.card-body {
+  height: 170px;
+}
+
+.card-img,
+.card-img-bottom,
+.card-img-top {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn-primary.cart {
+  color: #fff;
+  background-color: #4e2435;
+  border-color: #682640;
+}
+
+.btn-primary.cart:hover {
+  border: 0;
+  background-color: #4e2435;
+  border-color: #682640;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 1px, 0);
+}
+
+.btn-primary.cart:focus {
+  background-color: #4e2435;
+  border-color: #682640;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+}
+.btn-primary.cart:active:focus {
+  box-shadow: 0 0 0 0.2rem #68264065;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  h2.display-6 {
+    background-color: #000000a3;
+    padding: 10px;
+    transform: translate(0, 0) rotate(-10deg);
+  }
+}
