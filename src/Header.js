@@ -1,5 +1,7 @@
 import { Fragment } from "react";
 import "./Header.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
   return (
@@ -27,12 +29,12 @@ function Header() {
                   <button type="button" className="btn btn-outline-secondary">
                     Search
                   </button>
-                  <i class="fa-solid fa-cart-shopping"></i>
+                  <FontAwesomeIcon icon={faCartShopping} />
                 </div>
               </form>
             </div>
             <div className="col-md-3 d-flex justify-content-center justify-content-md-end">
-              <div>
+              <div style={{ height: 40 }}>
                 <button type="button" className="btn btn-primary cart">
                   Login
                 </button>
@@ -40,7 +42,10 @@ function Header() {
             </div>
             <div className="col-md-1 d-flex justify-content-center justify-content-md-end">
               <a className="me-2 btn btn-outline-secondary my-2">
-                <i className="cart fa fa-shopping-cart"></i>
+                <FontAwesomeIcon
+                  icon={faCartShopping}
+                  style={{ fontSize: 26 }}
+                />
               </a>
             </div>
           </div>
@@ -61,7 +66,7 @@ function Header() {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav mr-auto">
-              <li className="nav-item">
+              <li className="nav-item" style={{ cursor: "pointer" }}>
                 <a
                   className="nav-link"
                   aria-haspopup="true"
@@ -70,7 +75,7 @@ function Header() {
                   Home
                 </a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item" style={{ cursor: "pointer" }}>
                 <a
                   className="nav-link "
                   aria-haspopup="true"
@@ -139,7 +144,7 @@ function Header() {
                 </div>
               </li>
 
-              <li className="nav-item">
+              <li className="nav-item" style={{ cursor: "pointer" }}>
                 <a
                   className="nav-link"
                   aria-haspopup="true"

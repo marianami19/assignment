@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 import "../Home.scss";
 
 function FeaturedProds() {
@@ -277,7 +279,7 @@ function FeaturedProds() {
         </h6>
         <p className="card-text">{selectedCategory["description"]}</p>
         <a className="btn btn-primary cart">
-          <i className="fa fa-cart-plus"></i> Add to Cart
+          <FontAwesomeIcon icon={faCartPlus} /> Add to Cart
         </a>
       </div>
     </div>
