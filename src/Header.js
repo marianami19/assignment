@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import "./Header.scss";
 
 function Header() {
   return (
@@ -9,7 +10,6 @@ function Header() {
           <div className="row align-items-center">
             <div className="col-md-2 d-flex">
               <h3 className="my-3 " id="heading">
-                {" "}
                 SHOP ATTIRE
               </h3>
             </div>
@@ -27,7 +27,7 @@ function Header() {
                   <button type="button" className="btn btn-outline-secondary">
                     Search
                   </button>
-                  <i className="fa-solid fa-cart-shopping"></i>
+                  <i class="fa-solid fa-cart-shopping"></i>
                 </div>
               </form>
             </div>
